@@ -12,8 +12,6 @@ Kill a feature experiment when anomalies are detected. Mostly a place to keep no
 # Links: 
 
 
-
-
 * https://www.loggly.com/blog/smart-alerts-for-anomaly-detection-and-statistical-aggregations/
 * https://www.loggly.com/docs/anomaly-detection/ 
 * https://www.loggly.com/docs/alerts-overview/
