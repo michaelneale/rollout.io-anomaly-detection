@@ -4,7 +4,7 @@ Kill a feature experiment when anomalies are detected. This deployable function 
 
 This small function can be deployed via: 
 
-    `gcloud functions deploy rollout_webhook --trigger-http --runtime "python37"`
+    gcloud functions deploy rollout_webhook --trigger-http --runtime "python37"
 
 And then used as a webhook handler with a variety of log and monitoring services to halt a rollout.io experiment. 
 
