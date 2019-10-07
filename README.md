@@ -1,6 +1,7 @@
-# rollout.io-anomaly-detection
+# Rollout Webhooks for experiment killing
 
-Kill a feature experiment when anomalies are detected. 
+Kill a feature experiment when anomalies are detected. This deployable function can map from a webhook to a Rollout `PATCH` API call to kill an experiment and halt a deployment. 
+
 This small function can be deployed via: 
 
     `gcloud functions deploy rollout_webhook --trigger-http --runtime "python37"`
