@@ -1,16 +1,18 @@
 # rollout.io-anomaly-detection
 
-Kill a feature experiment when anomalies are detected. Mostly a place to keep notes. 
+Kill a feature experiment when anomalies are detected. 
+This small function can be deployed via: 
 
-# Todo: 
+    `gcloud functions deploy rollout_webhook --trigger-http --runtime "python37"`
 
-* Webapp to handle webhooks and kill an experient
-* Use smee to setup a webhook listener to delegate to local app for demo purposes
-* Could show similar for NR, amazon 
-* Show using a kmeans algorithm tailing a local log and killing on anomaly 
+And then used as a webhook handler with a variety of log and monitoring services to halt a rollout.io experiment. 
+
+See `main.py` for more info including what parameters are used, and where to customise the kill decision logic if needed beyond the initial webhook.
 
 # Links: 
 
+* https://rollout.io/
+* https://support.rollout.io/reference
 
 * https://www.loggly.com/blog/smart-alerts-for-anomaly-detection-and-statistical-aggregations/
 * https://www.loggly.com/docs/anomaly-detection/ 
